@@ -1,4 +1,4 @@
-﻿@model WardrobeDB.Models.Outfit
+﻿@model WardrobeDB.Models.WardrobeItem
 
 @{
     ViewBag.Title = "Details";
@@ -7,36 +7,36 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Outfit</h4>
+    <h4>Wardrobe Item</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Top.Name)
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Top.Name)
+            @Html.DisplayFor(model => model.Name)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Bottom.Name)
+            @Html.DisplayNameFor(model => model.Photo)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Bottom.Name)
+            @Html.DisplayFor(model => model.Photo)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Shoes.Name)
+            @Html.DisplayNameFor(model => model.Type.TypeName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Shoes.Name)
+            @Html.DisplayFor(model => model.Type.TypeName)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
+    @Html.ActionLink("Edit", "Edit", new { @class = "btn btn-warning glyphicon glyphicon-plus-sign" }, new { id = Model.WardrobeItemID }) 
     @Html.ActionLink("Back to List", "Index")
 </p>
