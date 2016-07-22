@@ -6,9 +6,11 @@
 }
 
 .jumbotron {
-    background-color:#ee198f;
+    /*background-color:#ee198f;*/
     font-style: italic;
-    
+    background-image: url("http://www.wearona.com/wp-content/uploads/2014/05/clothes-rack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .col-md-6{
     text-align: center;
